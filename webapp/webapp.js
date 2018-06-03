@@ -56,7 +56,7 @@ app.controller('myCtrl', function($scope, mySocket){
     	$scope.gtKC = json.cambien
 		$scope.CamBienKC = (json.cambien == 0) ? "Không có người!" : "Có người nhé!"
 		$scope.gtMua = json.mua
-		$scope.CamBienMua = (json.mua == 0) ? "Khong có mưa!" : "Có mưa nhé!"
+		$scope.CamBienMua = (json.mua == 1) ? "Khong có mưa!" : "Có mưa nhé!"
 		$scope.gtGas = json.gas
 		$scope.CamBienGas = (json.gas == 0) ? "An toàn!" : "Nguy hiểm có khi gas!"
 		$scope.CamBienND = json.temp + " độ C"
